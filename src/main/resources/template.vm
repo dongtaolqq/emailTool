@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<h1><a href='#'>继续作业...!</a></h1>
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=auto style='0pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt; mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;text-align:center; font-family:GE Inspria'>
+	<tr>
+		#foreach($title in $title)
+			<th>$title</th>
+		#end
+	</tr>
+	#foreach($row in $rows)
+	<tr>
+		#foreach($col in $row.record)
+			<td>$col</td>
+		#end
+	</tr>
+	#end
+</table>
+<h3>这只是一个测试哈.</h3>
+</body>
+</html>
